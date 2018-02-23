@@ -22,8 +22,10 @@ public class AnalyzerImpl implements Analyzer {
 
 
             }
-        } catch (Exception e) {
-            throw new FileReaderException("Ошибка чтения файла");
+        } catch (Exception e) {// Эм, тему исключеия мы уже расссматривали, и вот после тее ты осмеливаешься перехватывать один Exception
+            // смелый, смелый.........
+            throw new FileReaderException("Ошибка чтения файла");// 1 - почему на русском?
+            // 2 - "Ошибка чтения файла" - сообщения должны быть информативными, а эту инфу можно почерпнуть из названия класса
         }
     }
 
