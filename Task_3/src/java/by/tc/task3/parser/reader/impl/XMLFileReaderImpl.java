@@ -26,7 +26,7 @@ public class XMLFileReaderImpl implements XMLFileReader, AutoCloseable {
         try {
             reader = new BufferedReader(new FileReader(filePath));
         } catch (FileNotFoundException e) {
-            e.getMessage();
+            e.getMessage();//эм, а чего это мы тут гасим ?
         }
     }
 
@@ -53,7 +53,7 @@ public class XMLFileReaderImpl implements XMLFileReader, AutoCloseable {
     }
 
     @Override
-    public void close() throws Exception {
+    public void close() throws Exception { // throws Exception - ?
         reader.close();
     }
 
