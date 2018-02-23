@@ -2,7 +2,7 @@ package by.tc.task3.entity;
 
 public class Node {
     private String name;
-    private String type;
+    private String type;// типов узлов конечное число - не самое лучшее рещение использовать вместо перечисления строку
 
     public Node() {
 
